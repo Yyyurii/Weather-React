@@ -1,0 +1,17 @@
+.property {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.property div {
+    justify-self: center;
+    align-self: end;
+}
+
+@media (max-width:480px) {
+    .property {
+        display: flex;
+        flex-direction: column;
+    }
+}
