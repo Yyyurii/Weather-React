@@ -4,7 +4,11 @@ import SwapiService from '../../services/swapi-service';
 import PropTypes from 'prop-types';
 
 const propTypes = {
-  cityName: PropTypes.string.isRequired,
+  cityName: PropTypes.string,
+};
+
+const defaultProps = {
+  cityName: 'Kyiv',
 };
 
 export default class Temperature extends Component {
@@ -98,3 +102,4 @@ export default class Temperature extends Component {
 }
 
 Temperature.propTypes = propTypes;
+Temperature.defaultProps = defaultProps;

@@ -8,7 +8,7 @@ import Spinner from '../spinner';
 
 export default class App extends Component {
   state = {
-    city: 'Kyiv',
+    city: undefined,
     loading: false,
     error: false,
   }
