@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Weather-React/static/css/main.c42e9e37.chunk.css",
+    "main.js": "/Weather-React/static/js/main.01088abc.chunk.js",
+    "main.js.map": "/Weather-React/static/js/main.01088abc.chunk.js.map",
+    "runtime-main.js": "/Weather-React/static/js/runtime-main.02f6838b.js",
+    "runtime-main.js.map": "/Weather-React/static/js/runtime-main.02f6838b.js.map",
+    "static/js/2.6b287344.chunk.js": "/Weather-React/static/js/2.6b287344.chunk.js",
+    "static/js/2.6b287344.chunk.js.map": "/Weather-React/static/js/2.6b287344.chunk.js.map",
+    "index.html": "/Weather-React/index.html",
+    "precache-manifest.fb18e0004dd6a197a6b9b0212bdb5088.js": "/Weather-React/precache-manifest.fb18e0004dd6a197a6b9b0212bdb5088.js",
+    "service-worker.js": "/Weather-React/service-worker.js",
+    "static/css/main.c42e9e37.chunk.css.map": "/Weather-React/static/css/main.c42e9e37.chunk.css.map",
+    "static/js/2.6b287344.chunk.js.LICENSE.txt": "/Weather-React/static/js/2.6b287344.chunk.js.LICENSE.txt",
+    "static/media/wi-cloudy.svg": "/Weather-React/static/media/wi-cloudy.2d0410c5.svg",
+    "static/media/wi-day-cloudy.svg": "/Weather-React/static/media/wi-day-cloudy.3237f7da.svg",
+    "static/media/wi-day-rain-mix.svg": "/Weather-React/static/media/wi-day-rain-mix.ea0763d6.svg",
+    "static/media/wi-day-sunny.svg": "/Weather-React/static/media/wi-day-sunny.4b9869a6.svg",
+    "static/media/wi-fog.svg": "/Weather-React/static/media/wi-fog.c356784f.svg",
+    "static/media/wi-night-alt-cloudy-high.svg": "/Weather-React/static/media/wi-night-alt-cloudy-high.2fdaa36b.svg",
+    "static/media/wi-night-alt-cloudy.svg": "/Weather-React/static/media/wi-night-alt-cloudy.7c36f2b5.svg",
+    "static/media/wi-night-alt-showers.svg": "/Weather-React/static/media/wi-night-alt-showers.8ea1ac4e.svg",
+    "static/media/wi-night-alt-snow.svg": "/Weather-React/static/media/wi-night-alt-snow.db72088b.svg",
+    "static/media/wi-night-alt-sprinkle.svg": "/Weather-React/static/media/wi-night-alt-sprinkle.136e9961.svg",
+    "static/media/wi-night-alt-thunderstorm.svg": "/Weather-React/static/media/wi-night-alt-thunderstorm.8a97fabc.svg",
+    "static/media/wi-night-clear.svg": "/Weather-React/static/media/wi-night-clear.f86c33c4.svg",
+    "static/media/wi-night-fog.svg": "/Weather-React/static/media/wi-night-fog.7f68f0ff.svg",
+    "static/media/wi-showers.svg": "/Weather-React/static/media/wi-showers.751f5345.svg",
+    "static/media/wi-snow.svg": "/Weather-React/static/media/wi-snow.1a2bbf7d.svg",
+    "static/media/wi-thunderstorm.svg": "/Weather-React/static/media/wi-thunderstorm.22fff390.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02f6838b.js",
+    "static/js/2.6b287344.chunk.js",
+    "static/css/main.c42e9e37.chunk.css",
+    "static/js/main.01088abc.chunk.js"
+  ]
+}
