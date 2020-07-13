@@ -28,13 +28,15 @@ export default class Temperature extends Component {
 
   updateTemperature = () => {
     // eslint-disable-next-line react/prop-types
-    this.swapiService.getResource(this.props.cityName).then((response) => {
-      this.setState({
-        city: response.name,
-        temperature: `${Math.floor(response.main.temp - 273.15)} °C`,
-        icon: response.weather[0].icon,
-      });
-    });
+    this.swapiService.getResource(this.props.cityName)
+      .then((response) => {
+        this.setState({
+          city: response.name,
+          temperature: `${Math.floor(response.main.temp - 273.15)} °C`,
+          icon: response.weather[0].icon,
+        });
+      })
+      .catch(console.log);
   }
 
   updateIcon = () => {
