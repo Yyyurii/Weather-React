@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Yyyurii.github.io/Weather-React/",
   "name": "weather-react",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -18,26 +21,33 @@
   },
   "eslintConfig": {
     "extends": [
-    "react-app",
-    "airbnb"
+      "react-app",
+      "airbnb"
     ],
     "rules": {
-      "react/state-in-constructor": [0, "never"],
-    "linebreak-style": [0, "error", "windows"],
-    "jsx-a11y/no-autofocus": 0,
-    "implicit-arrow-linebreak": 0,
-    "react/destructuring-assignment": 0,
-    "operator-linebreak": [
-    "error",
-    "before",
-    {
-    "overrides": {
-    "=": "ignore"
+      "react/state-in-constructor": [
+        0,
+        "never"
+      ],
+      "linebreak-style": [
+        0,
+        "error",
+        "windows"
+      ],
+      "jsx-a11y/no-autofocus": 0,
+      "implicit-arrow-linebreak": 0,
+      "react/destructuring-assignment": 0,
+      "operator-linebreak": [
+        "error",
+        "before",
+        {
+          "overrides": {
+            "=": "ignore"
+          }
+        }
+      ]
     }
-    }
-    ]
-    }
-    },
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,6 +66,7 @@
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.3"
+    "eslint-plugin-react": "^7.20.3",
+    "gh-pages": "^3.1.0"
   }
 }
