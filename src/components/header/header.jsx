@@ -1,7 +1,11 @@
 import React from 'react';
 import './header.css';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
+const propTypes = {
+  onStateCity: PropTypes.func.isRequired,
+};
+
 const Header = ({ onStateCity }) =>
   (
     <div className="header">
@@ -16,3 +20,5 @@ const Header = ({ onStateCity }) =>
     </div>
   );
 export default Header;
+
+Header.propTypes = propTypes;

@@ -43,7 +43,7 @@ export default class App extends Component {
   }
 }
 
-// eslint-disable-next-line react/prop-types
+
 const View = ({ city }) => (
   <>
     <Temperature cityName={city} />

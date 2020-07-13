@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './temperature-box.css';
 import SwapiService from '../../services/swapi-service';
+import PropTypes from 'prop-types';
+
+const propTypes = {
+  cityName: PropTypes.string.isRequired,
+};
 
 export default class Temperature extends Component {
   swapiService = new SwapiService();
@@ -19,7 +24,6 @@ export default class Temperature extends Component {
 
   // eslint-disable-next-line no-unused-vars
   componentDidUpdate(prevProps, _prevState) {
-    // eslint-disable-next-line react/prop-types
     if (prevProps.cityName !== this.props.cityName) {
       this.updateTemperature();
       this.updateIcon();
@@ -27,7 +31,6 @@ export default class Temperature extends Component {
   }
 
   updateTemperature = () => {
-    // eslint-disable-next-line react/prop-types
     this.swapiService.getResource(this.props.cityName)
       .then((response) => {
         this.setState({
@@ -93,3 +96,5 @@ export default class Temperature extends Component {
     );
   }
 }
+
+Temperature.propTypes = propTypes;
