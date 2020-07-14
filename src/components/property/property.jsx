@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './property.css';
-import SwapiService from '../../services/swapi-service';
 import PropTypes from 'prop-types';
+import SwapiService from '../../services/swapi-service';
 
 const propTypes = {
   cityName: PropTypes.string,
@@ -9,7 +9,7 @@ const propTypes = {
 
 const defaultProps = {
   cityName: 'Kyiv',
-}
+};
 
 export default class Property extends Component {
     swapiService = new SwapiService();
