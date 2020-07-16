@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './temperature-box.css';
-import SwapiService from '../../services/swapi-service';
 import PropTypes from 'prop-types';
+import SwapiService from '../../services/swapi-service';
 
 const propTypes = {
   cityName: PropTypes.string,
@@ -23,7 +23,6 @@ export default class Temperature extends Component {
 
   componentDidMount() {
     this.updateTemperature();
-    // this.updateIcon();
   }
 
   // eslint-disable-next-line no-unused-vars
@@ -68,17 +67,15 @@ export default class Temperature extends Component {
       '50n': 'wi-night-fog',
     };
 
-    const keys = Object.keys(dict);
-    const values = Object.values(dict);
-
-    // eslint-disable-next-line no-plusplus
-    for (let i = 0; i < keys.length; i++) {
-      if (this.state.icon === keys[i]) {
-        this.setState({
-          image: values[i],
-        });
-      }
-    }
+   .forEach(
+      ([key, value]) => {
+        if (this.state.icon === key) {
+          this.setState({
+            image: value,
+          });
+        }
+      },
+    );
   }
 
   render() {
