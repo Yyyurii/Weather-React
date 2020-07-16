@@ -67,7 +67,7 @@ export default class Temperature extends Component {
       '50n': 'wi-night-fog',
     };
 
-   .forEach(
+    Object.entries(dict).forEach(
       ([key, value]) => {
         if (this.state.icon === key) {
           this.setState({
